@@ -17,7 +17,7 @@ function App() {
         <span className="text-lg text-white">YouTube Video Player</span>
       </div>      
       <RecoilRoot>
-        <Router>
+        <Router basename={process.env.PUBLIC_URL}>
           <div className="flex items-center h-full w-full bg-gradient-to-b bg-gray-100">     
             <Switch>             
                 <Route path="/video">
