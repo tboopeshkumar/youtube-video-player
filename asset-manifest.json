@@ -1,0 +1,23 @@
+{
+  "files": {
+    "main.css": "/youtube-video-player/static/css/main.4cd67d89.chunk.css",
+    "main.js": "/youtube-video-player/static/js/main.0bd78d49.chunk.js",
+    "main.js.map": "/youtube-video-player/static/js/main.0bd78d49.chunk.js.map",
+    "runtime-main.js": "/youtube-video-player/static/js/runtime-main.def25d70.js",
+    "runtime-main.js.map": "/youtube-video-player/static/js/runtime-main.def25d70.js.map",
+    "static/js/2.cc5242ee.chunk.js": "/youtube-video-player/static/js/2.cc5242ee.chunk.js",
+    "static/js/2.cc5242ee.chunk.js.map": "/youtube-video-player/static/js/2.cc5242ee.chunk.js.map",
+    "static/js/3.9c9da238.chunk.js": "/youtube-video-player/static/js/3.9c9da238.chunk.js",
+    "static/js/3.9c9da238.chunk.js.map": "/youtube-video-player/static/js/3.9c9da238.chunk.js.map",
+    "index.html": "/youtube-video-player/index.html",
+    "static/css/main.4cd67d89.chunk.css.map": "/youtube-video-player/static/css/main.4cd67d89.chunk.css.map",
+    "static/js/2.cc5242ee.chunk.js.LICENSE.txt": "/youtube-video-player/static/js/2.cc5242ee.chunk.js.LICENSE.txt",
+    "static/media/funnygif.028ee920.gif": "/youtube-video-player/static/media/funnygif.028ee920.gif"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.def25d70.js",
+    "static/js/2.cc5242ee.chunk.js",
+    "static/css/main.4cd67d89.chunk.css",
+    "static/js/main.0bd78d49.chunk.js"
+  ]
+}
