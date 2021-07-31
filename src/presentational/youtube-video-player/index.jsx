@@ -1,4 +1,4 @@
-import React, { useImperativeHandle, useRef } from 'react';
+import React, { useImperativeHandle } from 'react';
 import YouTube from 'react-youtube';
 import { getVideoIdFromLink } from '../../utils/youtubeLinkUtil';
 export const YouTubeVideoPlayer = React.forwardRef((props, ref) => {
