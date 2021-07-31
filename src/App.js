@@ -1,24 +1,39 @@
-import logo from './logo.svg';
-import './App.css';
+import {
+  BrowserRouter as Router,
+  Switch,
+  Route
+} from "react-router-dom";
+import {
+  RecoilRoot, 
+} from 'recoil';
+import { Home } from "./containers/home";
+import { ImageContainer } from "./containers/image-container";
+import { VideoPlayerContainer } from "./containers/video-player-container";
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <div className="flex flex-col h-full font-mono">
+      <div className="flex w-full justify-center bg-blue-500 h-12 items-center ">
+        <span className="text-lg text-white">YouTube Video Player</span>
+      </div>      
+      <RecoilRoot>
+        <Router>
+          <div className="flex items-center h-full w-full bg-gradient-to-b bg-gray-100">     
+            <Switch>             
+                <Route path="/video">
+                  <VideoPlayerContainer />
+                </Route>
+                <Route path="/image">      
+                  <ImageContainer />        
+                </Route>
+                <Route path={["/","/home"]}>
+                  <Home />
+                </Route>
+            </Switch>
+          </div>
+        </Router>
+      </RecoilRoot>
+    </div>  
   );
 }
 
