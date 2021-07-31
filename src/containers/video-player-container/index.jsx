@@ -10,8 +10,9 @@ export const VideoPlayerContainer = () => {
     const [, setvideoStartTime] = useRecoilState(videoStartTimeState);       
     const youTubePlayerRef = useRef();
     useLayoutEffect(() => {
+        const currentYoutTubePlayer = youTubePlayerRef.current;
         return () => {                      
-            const currentTime = youTubePlayerRef.current?.getCurrentTime();
+            const currentTime = currentYoutTubePlayer?.getCurrentTime();
             if(currentTime) {
                 setvideoStartTime(currentTime);
             }
